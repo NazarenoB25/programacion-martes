@@ -1,4 +1,4 @@
-body{
+body {
     background-color: black;
 }
 
@@ -11,6 +11,11 @@ h1 {
 
 img {
     position: relative;
+    border: 15px outset #ffa800;
+    border-radius: 46px 46px 46px 46px;
+    -webkit-border-radius: 46px 46px 46px 46px;
+    -moz-border-radius: 46px 46px 46px 46px;
+    -webkit-box-shadow: 2px 2px 37px 7px rgba(194, 121, 12, 0.55);
     box-shadow: 2px 2px 37px 7px rgba(194, 121, 12, 0.55);
     -webkit-box-shadow: 2px 2px 37px 7px rgba(194, 121, 12, 0.55);
     -moz-box-shadow: 2px 2px 37px 7px rgba(194, 121, 12, 0.55);
@@ -24,6 +29,5 @@ img {
 
 .titulos {
     color: rgb(224, 119, 0);
-    font-family:'Times New Roman', Times, serif
-    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif font-size'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
