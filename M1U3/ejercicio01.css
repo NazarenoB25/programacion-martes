@@ -24,7 +24,7 @@ img {
 .parrafo {
     color: rgb(255, 255, 255);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+    position: relative;
 }
 
 .titulos {
