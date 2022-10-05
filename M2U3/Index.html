@@ -19,44 +19,33 @@
 <body>
 
     <!-- ===================================NAV BAR======================================================= -->
-    <nav class="p-1 navbar fixed-top nav-dark" style="background-color: rgb(255, 255, 255) ;" id="menu">
+    <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><span class="text-primary fs-4 fw-bold"> Sabor a Casa </span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <!-- <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div> -->
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Nuestra Historia</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contactanos</a>
-                        </li>
+          <a class="navbar-brand" href="#">Sabor a Casa </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="carouselExampleIndicators" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#novedades">Novedades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#nosotros">Nosotros</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#seccion-contacto">Contactanos</a>
+              </li>
+             
 
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="email" placeholder="Correo Electronico"
-                            aria-label="email">
-                        <button class="btn btn-primary btn-primary-outline-success" type="button">Suscribite</button>
-                    </form>
-                </div>
-            </div>
+            
+          </div>
         </div>
-    </nav>
+      </nav>
 
     <!-- ===================================FIN NAV BAR======================================================= -->
     <!-- ===================================SLIDER======================================================= -->
@@ -114,7 +103,7 @@
     </section>
     <!-- ===================================FIN INTRO======================================================= -->
     <!-- ===================================SERVICIOS======================================================= -->
-    <section class="container-fluid" style="background: #f3f3f3;">
+    <section id="novedades" class="container-fluid" style="background: #f3f3f3; ">
         <div class="row w-75 mx-auto  servicios-fila">
             <div class="col-lg-6 col-md-12 col-sm-12
         d-flex  my-2 icono-wrap">

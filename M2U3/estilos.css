@@ -38,15 +38,16 @@
 }
 
 /* ====================================CONTACTOS BACKGROUND=============================== */
-#bg-contactos{
- position: relative;
- top:-130px;
+#bg-contactos {
+    position: absolute;
+   
+
 
 }
 
 #seccion-contacto {
     background-color: #1b2a4e;
-    min-height: 500px;
+    min-height: 650px;
     position: relative;
 }
 
@@ -63,7 +64,7 @@
     top: 1%;
     left: 30%;
     transform: translate(-30, -30);
-   background: #f3f3f3;
+    background: #f3f3f3;
     border-radius: 5px;
     max-width: 500px;
 }
@@ -86,39 +87,43 @@
 
 .mapa {
     width: 100%;
-   
-    margin-top: 50px;
+margin-left: 30px;
+    margin-top: 30px;
 }
 
 #local {
     background: #f3f3f3;
-    padding-bottom: 300px;
+    padding-bottom: 50px;
     display: flex;
     justify-content: center;
 }
 
 .wrapper {
     width: 50%;
-    margin-left: 1px;
-    padding-top: 5px;
-}
-/* ====================================SECCION DE MAPA=============================== */
-footer{
-    background: #1b2a4e;
-    min-height: 100px;
- margin-top: 500px;
+    margin-right: 150px;
+    margin-left: 0px;
+    padding-top: 50px;
 }
 
-footer p{
+/* ====================================SECCION DE MAPA=============================== */
+footer {
+    background: #1b2a4e;
+    min-height: 100px;
+    margin-top: 500px;
+}
+
+footer p {
     color: #f3f3f3;
     text-align: center;
 
 }
+
 #iconos i {
     font-size: 26px;
     padding: 0 8px;
     color: #f3f3f3;
 }
+
 /* ====================================MEDIA QUERIES PANTALLA ANCHA=============================== */
 
 @media(max-width:1200px) {
@@ -154,6 +159,9 @@ footer p{
         text-align: center;
 
     }
+
+    font-family: 'Alegreya Sans SC',
+    sans-serif;
 
     #bg-contactos {
         top: -110px;
