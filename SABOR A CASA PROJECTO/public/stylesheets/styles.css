@@ -215,8 +215,8 @@ footer p {
     }
     
     #seccion-contacto {
-        background-color: #1b2a4e;
-        min-height: 650px;
+        background-color: #004cff;
+        min-height: 670px;
         position: relative;
     }
     
@@ -277,8 +277,9 @@ footer p {
     /* ====================================SECCION DE MAPA=============================== */
     footer {
         background: #1b2a4e;
-        min-height: 100px;
-        margin-top: 500px;
+        
+        min-height: 110px;
+        margin-top: 510px;
     }
     
     footer p {
@@ -333,6 +334,7 @@ footer p {
         sans-serif;
     
         #bg-contactos {
+        
             top: -110px;
     
         }

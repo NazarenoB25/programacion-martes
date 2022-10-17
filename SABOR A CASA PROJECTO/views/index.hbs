@@ -105,7 +105,7 @@
                 trasmitir el verdadero sabor a casa</p>
         </div>
         <div class="mt-5 text-center">
-            <img class="img-fluid" src="./images/Dónde Se como como en casa.png" alt="" width="1000" height="200">
+            <img class="img-fluid" src="./images/Dónde Se como como en casa.png" alt="" width="750" height="200">
         </div>
         <!-- ===================================FIN NOSOTROS======================================================= -->
         <!-- ===================================MAPA======================================================= -->
@@ -159,30 +159,31 @@
                 <h2>Contactanos</h2>
                 <p>Estamos aqui para llevar el mejor sabor a todos lados</p>
             </div>
-            <form action="">
+            <form action="/" method="post">
              <div class="mb-3">
                 <input type="email"
                 class="form-control" id="email"
-                placeholder="nombre@ejemplo.com"required>
+                placeholder="nombre@ejemplo.com"required name="email">
             </div>
             <div class="mb-3">
                 <input type="text"
                 class="form-control" id="nombre"
-                placeholder="Adrian Farnandez"required>
+                placeholder="Adrian Farnandez"required name="nombre">
             </div>
             <div class="mb-3">
                 <input type="tel"
                 class="form-control" id="email"
-                placeholder="11-4650-4056"required>
+                placeholder="11-4650-4056"required name="tel">
             </div>
             <div class="mb-3">
-                <textarea class="form-control" id="exempleformcontroltextare1" rows="3" placeholder="Escribe tu mensaje"></textarea>
+                <textarea class="form-control" id="exempleformcontroltextare1" rows="3" placeholder="Escribe tu mensaje" name="mensaje" ></textarea>
             </div>
             <div class="mb-3">
-                <button type="button" class="btn btn-primary w-100 fs-5">Enviar Mensaje</button>
+                <button type="submit" class="btn btn-primary w-100 fs-5">Enviar Mensaje</button>
             </div>
                  
             </form>
+            <p>{{message}}</p>
         </div>
 
     </section>
