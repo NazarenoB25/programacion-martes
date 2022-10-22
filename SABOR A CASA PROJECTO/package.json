@@ -8,7 +8,9 @@
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
+    "dont": "^0.0.1",
     "dotenv": "^16.0.3",
+    "env": "^0.0.2",
     "express": "~4.16.1",
     "express-session": "^1.17.3",
     "hbs": "~4.0.4",
