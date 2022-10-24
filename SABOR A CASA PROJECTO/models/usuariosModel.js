@@ -8,7 +8,7 @@ async function getUserAndPassword(user, password) {
         return rows[0];
     } catch (error) {
         throw error;
-        // console.log(error)
+        console.log(error)
     }
 }
 

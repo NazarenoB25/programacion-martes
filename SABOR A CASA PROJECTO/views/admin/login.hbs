@@ -6,30 +6,22 @@
                     <div class="card-body p-5 text-center">
 
                         <h3 class="mb-5">Sign in</h3>
-                        <form action="admin/login" method="post">
+                        <form action="/admin/login" method="post">
 
                             <div class="form-outline mb-4">
-                                <label class="form-label for=" usuario">usuario</label>
+                                <label class="form-label for="usuario">usuario</label>
                                 <input type="text" id="usuario" name="usuario" class="form-control form-control-lg" />
-
                             </div>
-
                             <div class="form-outline mb-4">
                                 <label class="form-label" for="password">Contraseña</label>
                                 <input type="password" id="password" name="password"
                                     class="form-control form-control-lg" />
                             </div>
-
-
-
                             <button class="btn btn-primary btn-lg btn-block" type="submit">Iniciar</button>
-
                         </form>
-
                         {{#if error}}
                         <p> Usuario o contraseña incorrecta.</p>
                         {{/if}}
-
                     </div>
                 </div>
             </div>
