@@ -1,6 +1,6 @@
-<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">body {
-    font-family: 'Abril Fatface', cursive;
-    overflow: hidden;
+body {
+   
+    overflow: scroll;
 }
 
 /* ====================================MENU=============================== */
@@ -158,17 +158,17 @@ footer p {
         width: 100% !important;
         text-align: center;
 
-    }
+    
 
     font-family: 'Alegreya Sans SC',
-    sans-serif;
+    sans-serif;}
 
     #bg-contactos {
         top: -110px;
 
     }
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">body {
-        font-family: 'Abril Fatface', cursive;
+   body {
+       
         overflow: hidden;
     }
     
@@ -328,10 +328,10 @@ footer p {
             width: 100% !important;
             text-align: center;
     
-        }
+        
     
         font-family: 'Alegreya Sans SC',
-        sans-serif;
+        sans-serif;}
     
         #bg-contactos {
         
