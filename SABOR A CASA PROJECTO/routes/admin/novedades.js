@@ -1,8 +1,8 @@
 var express = require('express');
 var router = express.Router();
 var novedadesModel = require('./../../models/novedadesModel');
-var util = require('util');
-var cloudinary = require('cloudinary').v2;
+var util = require("util");
+var cloudinary = require("cloudinary").v2;
 const uploader = util.promisify(cloudinary.uploader.upload);
 
 
@@ -39,20 +39,17 @@ router.get('/agregar', (req, res, next) => {
 
 router.post('/agregar', async (req, res, next) => {
     try {
-
-        var img_id ='';
-
+        var img_id = '';
         if (req.files && Object.keys(req.files).length > 0) {
             imagen = req.files.imagen;
             img_id = (await uploader(imagen.tempFilePath)).public_id;
         }
 
-        // console.log(req.body)
-        if (req.body.titulo != "" && req.body.subtitulo != "" && req.body.cuerpo != "") {
+        if (req.body.titulo != "" && req.body.cuerpo != "") {
             await novedadesModel.insertNovedad({
                 ...req.body,
-                img_id
-        });
+                img_id,
+            });
             res.redirect('/admin/novedades')
         } else {
             res.render('admin/agregar', {
@@ -86,7 +83,7 @@ router.post('/modificar', async (req, res, next) => {
         var obj = {
             titulo: req.body.titulo,
             cuerpo: req.body.cuerpo,
-            // img_id
+            img_id
         }
 
         console.log(obj)
