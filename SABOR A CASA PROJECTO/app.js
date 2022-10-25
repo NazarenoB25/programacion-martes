@@ -6,6 +6,7 @@ var logger = require('morgan');
 
 require('dotenv').config();
 const session = require('express-session');
+var fileUpload = require ('express-fileupload');
 
 var pool = require('./models/bd');
 
@@ -43,6 +44,11 @@ secured = async (req, res, next) => {
       console.log(error);
     }
   }
+
+app.use(fileUpload({
+  useTemFiles: true,
+  tempFileDir: '/tmp/'
+}));
 
 
 app.use('/', indexRouter);
