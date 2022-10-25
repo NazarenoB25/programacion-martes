@@ -39,16 +39,16 @@ router.get('/agregar', (req, res, next) => {
 
 router.post('/agregar', async (req, res, next) => {
     try {
-        var img_id = '';
+        var imagen = '';
         if (req.files && Object.keys(req.files).length > 0) {
             imagen = req.files.imagen;
-            img_id = (await uploader(imagen.tempFilePath)).public_id;
+            imagen = (await uploader(imagen.tempFilePath)).public_id;
         }
 
         if (req.body.titulo != "" && req.body.cuerpo != "") {
             await novedadesModel.insertNovedad({
                 ...req.body,
-                img_id,
+                imagen: img_id
             });
             res.redirect('/admin/novedades')
         } else {
@@ -83,7 +83,7 @@ router.post('/modificar', async (req, res, next) => {
         var obj = {
             titulo: req.body.titulo,
             cuerpo: req.body.cuerpo,
-            img_id
+            
         }
 
         console.log(obj)
