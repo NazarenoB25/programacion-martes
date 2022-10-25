@@ -55,40 +55,21 @@
     <!-- ===================================SERVICIOS======================================================= -->
     <section id="novedades" class="container-fluid" style="background: #f3f3f3; ">
         <div class="row w-75 mx-auto  servicios-fila">
+           {{#each novedades}}
             <div class="col-lg-6 col-md-12 col-sm-12
         d-flex  my-2 icono-wrap">
-                <img src="./images/www.sitioincreible.com.png" alt="novedades" width="150" height="150">
+                <img src="./images/www.sitioincreible.com.png" alt="novedades" width="250" height="250">
                 <div>
-                    <h3 class="fs-5 mt-4 px-4 pb-1">Novedades</h3>
-                    <p class="px-4">Los mejores platillos los encontras por aca</p>
+                    <h3 class="fs-5 mt-4 px-4 pb-1">{{titulo}}</h3>
+                    <p class="px-4">{{cuerpo}}</p>
                 </div>
 
             </div>
-            <div class="col-lg-6 col-md-12 col-sm-12 d-flex  my-2 icono-wrap">
-                <img src="./images/www.sitioincreible.com.png" alt="novedades" width="150" height="150">
-                <div>
-                    <h3 class="fs-5 mt-4 px-4 pb-1">Novedades</h3>
-                    <p class="px-4">Los mejores platillos los encontras por aca</p>
-                </div>
 
-            </div>
-            <div class="col-lg-6 col-md-12 col-sm-12
-        d-flex  my-2 icono-wrap">
-                <img src="./images/www.sitioincreible.com.png" alt="novedades" width="150" height="150">
-                <div>
-                    <h3 class="fs-5 mt-4 px-4 pb-1">Novedades</h3>
-                    <p class="px-4">Los mejores platillos los encontras por aca</p>
-                </div>
-
-            </div>
-            <div class="col-lg-6 col-md-12 col-sm-12 d-flex  my-2 icono-wrap">
-                <img src="./images/www.sitioincreible.com.png" alt="novedades" width="150" height="150">
-                <div>
-                    <h3 class="fs-5 mt-4 px-4 pb-1">Novedades</h3>
-                    <p class="px-4">Los mejores platillos los encontras por aca</p>
-                </div>
-
-            </div>
+            {{/each}}
+        
+          
+       
         </div>
     </section>
 
